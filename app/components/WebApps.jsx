@@ -25,16 +25,7 @@ useEffect(()=>{
     }}><b>{app?.name}</b>
     <p><b>Beschreibung: </b>{app.description}</p>
     <Link href={'https://'+app.link}>
-      <p style={{
-        backgroundColor: 'black',
-        color: 'white',
-        borderRadius: '10rem',
-        padding: '1rem',
-        width: '10rem',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>zur Web-App</p> 
+      <p className='button'>zur Web-App</p> 
     </Link>
       </div>)      
         })}

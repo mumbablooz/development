@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Image from 'next/image'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,10 +17,30 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <header>
+      <body className={inter.className}
+      style={{
+        padding: '0.4rem'
+      }}>
+        <header style={{
+          display: 'flex',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          borderBottom: '0.1rem solid white',
+          paddingBottom: '1rem',
+        }}>
         <h1>Blooz Development</h1>
-        <p>Webanwendung, programmiert mit Javascript</p>
+        <Image 
+        src={'/bloozLogo.jpg'}
+        width={900}
+        height={900}
+        style={{
+          width: '100px',
+          height: '100px',
+          borderRadius: '50%',
+          margin: '0.5rem'
+        }}
+        alt={'Avatar Blooz Logo'}/>
+        <p>Meine Webanwendung, programmiert mit Javascript</p>
         </header>
 
         {children}
