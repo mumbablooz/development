@@ -13,15 +13,18 @@ useEffect(()=>{
 
   return (
     <div style={{
-
+        display: 'flex',
+        flexWrap: 'wrap',
         padding: '0.4rem',
       }}>
         {webApp && webApp.map((app,index)=>{
     return (<div 
       key={'app-'+index}
       style={{
-      border: '1px solid black',
+        width: '26rem',
+      border: '1px solid white',
       padding: '0.4rem',
+      margin: '0.6rem',
     }}><b>{app?.name}</b>
     <p><b>Beschreibung: </b>{app.description}</p>
     <Link href={'https://'+app.link}>
