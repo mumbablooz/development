@@ -19,6 +19,7 @@ useEffect(()=>{
         display: 'flex',
         flexWrap: 'wrap',
         padding: '0.4rem',
+        margin: '0.4rem 0 0 0',
       }}>
         {webApp && webApp.map((app,index)=>{
     return (<div 
@@ -32,14 +33,15 @@ useEffect(()=>{
       borderRadius: '2rem',
       padding: '0.8rem',
       margin: '0.6rem',
-    }}><h3 style={{
+    }}>
+      
+    <h3 style={{
       alignSelf: 'center',
     marginRight: '1rem',}}>{app?.name}</h3>
     {app.description && <p><b>Beschreibung: </b>{app.description}</p>}
     {app.content && <p><b>Inhalte: </b>{app.content}</p>}
     {app.features && <p><b>Highlights: </b>{app.features}</p>}
     {app.technologys && <p style={partCss}><b>Technologien: </b>{app.technologys.map((technology,index)=>{
-      console.log(index)
       return technology+', '
     })}</p>}
     <Link href={'https://'+app.link}>
