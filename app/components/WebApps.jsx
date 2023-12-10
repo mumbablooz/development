@@ -6,6 +6,9 @@ export default function WebApps() {
 
 const [ webApp, setWebApp ] = useState('')
 
+const partCss ={
+  margin: '0.6rem'
+}
 useEffect(()=>{
   fetchWebApps(setWebApp)
 },[])
@@ -23,6 +26,7 @@ useEffect(()=>{
       style={{
         maxWidth: '50rem',
         display: 'flex',
+        flexWrap: 'wrap',
         alignItems: 'center',
       border: '1px solid white',
       borderRadius: '2rem',
@@ -34,8 +38,9 @@ useEffect(()=>{
     {app.description && <p><b>Beschreibung: </b>{app.description}</p>}
     {app.content && <p><b>Inhalte: </b>{app.content}</p>}
     {app.features && <p><b>Highlights: </b>{app.features}</p>}
-    {app.technology && <p><b>Technologien: </b>{app.technology.map((technology)=>{
-      return technology
+    {app.technologys && <p style={partCss}><b>Technologien: </b>{app.technologys.map((technology,index)=>{
+      console.log(index)
+      return technology+', '
     })}</p>}
     <Link href={'https://'+app.link}>
       <p className='button'
