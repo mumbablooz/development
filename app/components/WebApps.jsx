@@ -21,14 +21,27 @@ useEffect(()=>{
     return (<div 
       key={'app-'+index}
       style={{
-        width: '26rem',
+        maxWidth: '50rem',
+        display: 'flex',
+        alignItems: 'center',
       border: '1px solid white',
-      padding: '0.4rem',
+      borderRadius: '2rem',
+      padding: '0.8rem',
       margin: '0.6rem',
-    }}><b>{app?.name}</b>
-    <p><b>Beschreibung: </b>{app.description}</p>
+    }}><h3 style={{
+      alignSelf: 'center',
+    marginRight: '1rem',}}>{app?.name}</h3>
+    {app.description && <p><b>Beschreibung: </b>{app.description}</p>}
+    {app.content && <p><b>Inhalte: </b>{app.content}</p>}
+    {app.features && <p><b>Highlights: </b>{app.features}</p>}
+    {app.technology && <p><b>Technologien: </b>{app.technology.map((technology)=>{
+      return technology
+    })}</p>}
     <Link href={'https://'+app.link}>
-      <p className='button'>zur Web-App</p> 
+      <p className='button'
+      style={{
+        width: '16rem'
+      }}>zur Web-App</p> 
     </Link>
       </div>)      
         })}
