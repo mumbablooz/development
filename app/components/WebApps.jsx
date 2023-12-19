@@ -44,6 +44,8 @@ useEffect(()=>{
     {app.technologys && <p style={partCss}><b>Technologien: </b>{app.technologys.map((technology,index)=>{
       return technology+', '
     })}</p>}
+        {app.github && <div><b>Github: </b>
+        <Link href={app.github}><p>{app.github}</p></Link></div>}
     <Link href={'https://'+app.link}>
       <p className='button'
       style={{
