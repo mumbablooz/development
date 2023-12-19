@@ -1,4 +1,4 @@
-import WebApps from './components/WebApps'
+import WebApps from './components/WebApps/WebApps'
 export default function Home() {
 
   return (
