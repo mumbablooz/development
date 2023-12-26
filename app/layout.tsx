@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
+
 import './globals.css'
 import {bildLinksArray} from './bildLinks'
 const inter = Inter({ subsets: ['latin'] })
@@ -41,16 +42,16 @@ export default function RootLayout({
         }}
         alt={'Avatar Blooz Logo'}/>
  <Image 
-        src={bildLinksArray[0]}
-        width={900}
-        height={900}
+        src={'/AI_Generated_Image_2023-12-26_441272743032201.png'}
+        width={1024}
+        height={1024}
         style={{
           width: '100px',
           height: '100px',
           borderRadius: '50%',
           margin: '0.5rem'
         }}
-        alt={'Avatar Blooz Logo'}/>
+        alt={'Entwickler beim programieren'}/>
         <p>Meine Webanwendung, programmiert mit Javascript</p>
         </header>
 
