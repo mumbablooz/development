@@ -1,6 +1,6 @@
 .mainContainer{
 padding: 0.4rem;
-overflow: hidden;
+overflow: clip;
 }
 .container{
     display: flex;
@@ -8,15 +8,15 @@ overflow: hidden;
     border-radius: 2rem;
     padding: 0.8rem;
     margin: 0.6rem;
-    overflow: hidden;
+    overflow: clip;
 }
 .container div:first-child{
     padding: 0.4rem;
-    overflow: hidden;
+    overflow: clip;
 }
 .leftSideContainer{
 
-    overflow: hidden;
+    overflow: clip;
 }
 .leftSideContainer .button{
     width: 10rem;
@@ -48,9 +48,9 @@ overflow: hidden;
         .container div:first-child{
             padding: 0.4rem;
         }
-        .leftSideContainer{
+  /*      .leftSideContainer{
 
-        }
+        }*/
         .leftSideContainer .button{
             width: 5rem;
         }
