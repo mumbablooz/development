@@ -1,7 +1,6 @@
 .mainContainer{
 padding: 0.4rem;
-margin-left: 2rem;
-width: 100vw;
+width: 95vw;
 }
 .container{
     display: flex;
@@ -32,3 +31,37 @@ width: 100vw;
 .leftSideContainer h3{
     margin-right: 1rem;
 }
+@media (max-width: 768px) {
+
+    .mainContainer{
+        padding: 0.2rem;
+        }
+        .container{
+
+            border-radius: 1rem;
+            padding: 0.4rem;
+            margin: 0.3rem;
+        }
+        .container div:first-child{
+            padding: 0.4rem;
+        }
+        .leftSideContainer{
+            min-width: 6rem;
+        }
+        .leftSideContainer .button{
+            width: 5rem;
+        }
+    /*    .infoContentContainer{
+            display: grid;
+            grid-template-columns: auto auto;
+        }*/
+        .infoContentContainer p {
+            padding: 0 0.3rem;
+        }
+        .partCss{
+            margin: 0.3rem;
+        }
+        .leftSideContainer h3{
+            margin-right: 0.5rem;
+        }
+}    
