@@ -71,7 +71,6 @@ section{
 
 @media (max-width: 768px) {
   body {
-    background-color: lightblue;
     p, b, a, button{
       font-size: 0.8em;
 
