@@ -10,7 +10,7 @@ body{
   width: 100vw;
 }
 div,section{
-  transition: 5s ease-in-out;
+  transition: 3s ease-in-out;
 }
 a{
   text-decoration: none;
@@ -70,7 +70,8 @@ section{
 }
 
 @media (max-width: 768px) {
-  body {
+
+
     p, b, a, button{
       font-size: 0.8em;
 
@@ -91,4 +92,4 @@ section{
     font-size: 1.0em;
     }
   }
-}
+
