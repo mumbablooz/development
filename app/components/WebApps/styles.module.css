@@ -1,6 +1,7 @@
 .mainContainer{
 padding: 0.4rem;
 width: 95vw;
+            overflow: hidden;
 }
 .container{
     display: flex;
