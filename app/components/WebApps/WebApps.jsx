@@ -30,23 +30,21 @@ useEffect(()=>{
     </Link>       
       </div>
 
-      <div className={styles.infoContentContainer}   >
-    {app.description && <b>Beschreibung: </b>}
-    {app.description && <p>{app.description}</p>}
+      <div className={styles.infoContentContainer}>
+ 
+    {app.description && <div><b>Beschreibung: </b>
+    <p>{app.description}</p></div>}
+    {app.content && <div><b>Inhalte: </b>
+    <p>{app.content}</p></div>}
+    {app.features && <div><b>Highlights: </b>
+    <p>{app.features}</p></div>}
 
-    {app.content && <b>Inhalte: </b>}
-    {app.content && <p>{app.content}</p>}
-
-    {app.features && <b>Highlights: </b>}
-    {app.features && <p>{app.features}</p>}
-
-    {app.technologys && <b>Technologien: </b>}
-    {app.technologys && <p className={styles.partCss}>{app.technologys.map((technology,index)=>{
+    {app.technologys && <div><b>Technologien: </b>
+    <p className={styles.partCss}>{app.technologys.map((technology,index)=>{
       return technology+', '
-    })}</p>}
-
-    {app.github && <b>Github: </b>}
-    {app.github && <div>
+    })}</p></div>}
+    {app.github && <div><b>Github: </b>
+  
     <Link href={app.github}><p style={{color: 'white'}}>{app.github}</p></Link></div>}       
         </div>
 
