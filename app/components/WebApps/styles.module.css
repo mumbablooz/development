@@ -1,6 +1,7 @@
 .mainContainer{
 padding: 0.4rem;
 overflow: clip;
+
 }
 .container{
     display: flex;
@@ -22,11 +23,14 @@ overflow: clip;
     width: 10rem;
 }
 .infoContentContainer{
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+flex-direction: column;
     overflow: clip;
 }
-.infoContentContainer p {
+.infoContentContainer div{
+    display: flex;
+}
+.infoContentContainer div p {
     padding: 0 0.6rem;
 }
 .partCss{
@@ -54,9 +58,9 @@ overflow: clip;
         .leftSideContainer .button{
             width: 5rem;
         }
-    /*    .infoContentContainer{
-            display: grid;
-            grid-template-columns: auto auto;
+     /*  .infoContentContainer{
+      
+            max-width: 40rem;
         }*/
         .infoContentContainer p {
             padding: 0 0.3rem;
