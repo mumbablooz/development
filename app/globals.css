@@ -14,26 +14,30 @@ div,section{
 }
 a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 ul{
   list-style-type: none;
 }
-p, b, button{
-  font-size: 1.2rem;
+p, b, a, button{
+  font-size: 1.2em;
+  color: white;
 }
 h1{
-  font-size: 2.6rem;
+  font-size: 2.6em;
+  color: white;
 }
 h2{
-  font-size: 2.0rem;
+  font-size: 2.0em;
+  color: white;
 }
 h3{
-  font-size: 1.4rem;
+  font-size: 1.4em;
   font-weight: bold;
+  color: white;
 }
 h4{
-font-size: 1.0rem;
+font-size: 1.0em;
 }
 li{
   transition: 0.2s ease-in-out;
@@ -60,4 +64,32 @@ button, .button{
 }
 button:hover, .button:hover{
   background-color: 	rgb(156, 151, 213);
+}
+section{
+  min-height: 50vh;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: lightblue;
+    p, b, a, button{
+      font-size: 0.8em;
+
+    }
+    h1{
+      font-size: 2.0em;
+
+    }
+    h2{
+      font-size: 1.4em;
+
+    }
+    h3{
+      font-size: 1em;
+
+    }
+    h4{
+    font-size: 1.0em;
+    }
+  }
 }
