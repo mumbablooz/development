@@ -52,7 +52,7 @@ export default function RootLayout({
           margin: '0.5rem'
         }}
         alt={'Entwickler beim programieren'}/>
-        <p>Meine Webanwendung, programmiert mit Javascript</p>
+        <p>{'<'}Meine Webanwendung, programmiert mit Javascript{'/>'}</p>
         </header>
 
         {children}
