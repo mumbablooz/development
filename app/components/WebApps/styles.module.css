@@ -1,7 +1,7 @@
 .mainContainer{
 padding: 0.4rem;
 width: 95vw;
-            overflow: hidden;
+
 }
 .container{
     display: flex;
@@ -12,6 +12,7 @@ width: 95vw;
 }
 .container div:first-child{
     padding: 0.8rem;
+    overflow: hidden;
 }
 .leftSideContainer{
     min-width: 12rem;
