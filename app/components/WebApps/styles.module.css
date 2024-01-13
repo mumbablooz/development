@@ -16,11 +16,11 @@ width: 100%;
     overflow: clip;
 }
 .leftSideContainer{
-    width: 14rem;
+    width: 20%;
     overflow: clip;
 }
 .leftSideContainer .button{
-    width: 8rem;
+
     overflow: clip;
 }
 .infoContentContainer{
