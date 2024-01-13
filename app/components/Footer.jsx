@@ -26,6 +26,7 @@ justifyContent: 'center',
         <Link href={'/Impressum'} className='button'><li style={linkCss}>Impressum</li></Link>
         <Link href={'/Datenschutz'} className='button'><li style={linkCss}>Datenschutz</li></Link>
 </ul>
+        <br/>
 <ul
   style={{
     display: 'flex',
