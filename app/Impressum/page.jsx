@@ -1,5 +1,5 @@
 import React from 'react'
-import KontaktDaten from '../components/KontaktDaten'
+import KontaktDaten from '../components/dateParts/KontaktDaten'
 import Image from 'next/image'
 import Link from 'next/link'
 
