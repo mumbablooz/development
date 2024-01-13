@@ -1,12 +1,12 @@
 .mainContainer{
 padding: 0.4rem;
 overflow: clip;
-
+width: 100%;
 }
 .container{
     display: flex;
     border: 1px solid white;
-    border-radius: 2rem;
+    border-radius: 2em;
     padding: 0.8rem;
     margin: 0.6rem;
     overflow: clip;
@@ -16,11 +16,11 @@ overflow: clip;
     overflow: clip;
 }
 .leftSideContainer{
-    width: 14em;
+    width: 14rem;
     overflow: clip;
 }
 .leftSideContainer .button{
-    width: 8em;
+    width: 8rem;
     overflow: clip;
 }
 .infoContentContainer{
