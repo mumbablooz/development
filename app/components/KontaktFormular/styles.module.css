@@ -7,14 +7,24 @@ align-items: center;
 border-bottom: 1px solid var(--fourthColor);
 }
 
-.contactForm div,
+.contactForm div {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+}
 .contactForm button {
     margin-bottom: 1rem;
-}
-.contactForm div textarea{
-    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
 }
 .contactForm div label{
-color: var(--fourthColor);
-margin-right: 1rem;
+    color: var(--fourthColor);
+    margin-right: 1rem;
+    }
+.contactForm div textarea,
+.contactForm div input{
+    width: 70vw;
 }
