@@ -1,0 +1,20 @@
+.contactForm{
+color: var(--firstColor);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid var(--fourthColor);
+}
+
+.contactForm div,
+.contactForm button {
+    margin-bottom: 1rem;
+}
+.contactForm div textarea{
+    width: 70vw;
+}
+.contactForm div label{
+color: var(--fourthColor);
+margin-right: 1rem;
+}
