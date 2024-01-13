@@ -9,7 +9,7 @@ export default function Impressum() {
 
         <h2>Impressum</h2>
         <br />
-<p>Angaben gemäß § 5 TMG:</p>
+
         <KontaktDaten />
 <br />
 <Link href={'/Datenschutz'}><h3>Datenschutzerklärung</h3></Link>
