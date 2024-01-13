@@ -20,16 +20,14 @@ overflow: clip;
     overflow: clip;
 }
 .leftSideContainer .button{
-    width: 10rem;
+    width: 12rem;
 }
 .infoContentContainer{
     display: flex;
 flex-direction: column;
     overflow: clip;
 }
-.infoContentContainer div{
-    display: flex;
-}
+
 .infoContentContainer div p {
     padding: 0 0.6rem;
 }
