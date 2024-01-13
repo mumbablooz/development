@@ -4,7 +4,8 @@ import Link from 'next/link'
 export default function Footer() {
     const linkCss ={
         fontSize: '0.6rem',
-        padding: '0.1em'
+        padding: '0.1em 0.4em',
+        marginBottom: '1em'
     }
   return (
     <div 
@@ -23,10 +24,10 @@ justifyContent: 'center',
     justifyContent: 'center',
     backgroundColor: 'transparent',
         }}>    
-        <Link href={'/Impressum'} className='button'><li style={linkCss}>Impressum</li></Link>
-        <Link href={'/Datenschutz'} className='button'><li style={linkCss}>Datenschutz</li></Link>
+        <Link href={'/Impressum'} className='button' style={linkCss}><li>Impressum</li></Link>
+        <Link href={'/Datenschutz'} className='button' style={linkCss}><li>Datenschutz</li></Link>
 </ul>
-        <br/>
+<br />
 <ul
   style={{
     display: 'flex',
@@ -34,8 +35,8 @@ justifyContent: 'center',
     justifyContent: 'center',
     backgroundColor: 'transparent',
         }}>    
-        <Link href={'https://blooz.de'} className='button'><li style={linkCss}> App by Blooz Development</li></Link>
-        <Link href={'https://icons8.de'} className='button'><li style={linkCss}>Icons by icons8</li></Link>
+        <Link href={'https://blooz.de'} className='button' style={linkCss}><li> App by Blooz Development</li></Link>
+        <Link href={'https://icons8.de'} className='button' style={linkCss}><li>Icons by icons8</li></Link>
 </ul>
     </div>
   )
