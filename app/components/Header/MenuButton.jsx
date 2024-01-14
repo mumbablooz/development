@@ -1,25 +1,32 @@
-export default function MenuButton({isOpen,setIsOpen}) {
+import React from 'react'
+import Link from 'next/link'
+import styles from './styles.module.css'
 
-   function handleOnClick(){
-setIsOpen(!isOpen)
-    }
+export default function Menu({isOpen,setIsOpen}) {
+  return (
+    <div className={styles.menuContainer}>
 
-  return (   
-        <li className='iconButton'>
-            {!isOpen ? <img 
-        width="24" 
-        height="24" 
-        src="https://img.icons8.com/material-outlined/24/var(--firstColor)/menu--v1.png"  
-        alt="menu--v1"
-        onClick={handleOnClick}
-        style={{cursor: 'pointer'}}
-        /> : <img 
-        width="24" 
-        height="24" 
+    <img 
+        width="12" 
+        height="12" 
         src="https://img.icons8.com/material/24/var(--firstColor)/cancel--v1.png" 
         alt="cancel--v1"
-        onClick={handleOnClick}
-        style={{cursor: 'pointer'}}/>}
-        </li>
+        onClick={()=>setIsOpen(!isOpen)}
+        style={{cursor: 'pointer',
+        alignSelf: 'flex-end'}}/>
+
+    <ul>
+    <li className='menuButton'>
+        <Link href={'/Spenden'}>
+            Projekte unerstützen
+        </Link></li>
+      <li className='menuButton'>
+        <Link href={'/Kontakt'}>
+            Kontakt
+        </Link></li>
+   
+    </ul>
+    
+    </div>
   )
 }
