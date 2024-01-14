@@ -11,6 +11,8 @@ export default function ExterneInhalte() {
           <li><a  href="https://icons8.com/icon/87069/telefon-getrennt">Telefon getrennt</a> icon by <a href="https://icons8.com">Icons8</a></li>
           <li><a  href="https://icons8.com/icon/82749/menü">Menü</a> icon by <a href="https://icons8.com">Icons8</a></li>
           <li><a  href="https://icons8.com/icon/82813/schließen">schließen</a> icon by <a href="https://icons8.com">Icons8</a></li>
+          <li><a  href="https://icons8.com/icon/CaSfJLdM4LTY/paypal">PayPal</a> icon by <a href="https://icons8.com">Icons8</a></li>
+          <li><a  href="https://icons8.com/icon/61105/e-mail-kontakt">E-Mail Kontakt</a> icon by <a href="https://icons8.com">Icons8</a></li>
         </ul>
           
         
