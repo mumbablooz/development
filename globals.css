@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --firstColor: rgb(8, 5, 41);
+  --secoundColor: rgb(69, 61, 152);
+  --thirdColor: #000;
+  --fourthColor: aliceblue;
+  --fifthColor: rgb(130, 126, 176);
+}
+
+body {
+  background-color: var(--firstColor);
+  color: var(--fourthColor);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  position: relative;
+}
+h1{
+  font-size: 2.2rem;
+}
+h2{
+  font-size: 1.8rem;
+}
+h3{
+  font-size: 1.4rem;
+  margin: 0.5rem 0
+}
+h4{
+  font-size: 1.2rem;
+}
+section, main {
+  padding: 0.4em;
+  min-height: 50vh;
+  margin-bottom: 15vh;
+  margin-top: 10vh;
+  transition: 3s ease-in-out;
+}
+
+a{
+  text-decoration: none;
+}
+ul{
+  background-color: var(--secoundColor);
+  color: var(--firstColor);
+  padding: 0.5rem;
+  list-style-type: none;
+}
+p, b, a, button{
+  font-size: 1.2em;
+}
+
+li{
+  transition: 0.1s ease-in-out;
+}
+li:hover{
+  background-color: 	var(--firstColor);
+    transition: 0.1s ease-in-out;
+    }
+li:active{
+  background-color: var(--firstColor);
+    transition: 0.1s ease-in-out;
+    }
+figure {
+  margin: 0;
+}
+button, 
+.button,
+.greenButton,
+.iconButton{
+  padding: 0.3rem;
+  border-radius: 10rem;
+  transition: 0.1s ease-in-out;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  button:hover,
+  .button:hover,
+  .greenButton:hover,
+  .iconButton:hover{
+    border-radius: 50rem;
+    transition: 0.5s ease-in-out;
+  }
+
+  button, 
+  .button{
+    background-color: var(--secoundColor);
+    color: var(--firstColor);
+  }
+  button:hover,
+  .button:hover,
+  .icon,
+  .iconButton:hover
+{
+  background-color: var(--fifthColor);
+    color: var(--fourthColor);
+  }
+  .iconButton{
+width: 3rem;
+height: 3rem;
+  }
+  .greenButton{
+background-color: green;
+color: var(--fourthColor);
+  }
+  .greenButton:hover{
+    background-color: lightgreen;
+    color: var(--firstColor);
+  }
+  .menuButton{
+background-color: transparent;
+color: var(--firstColor);
+  }
+  .menuButton:hover{
+    color: var(--secoundColor);
+    background-color: transparent;
+  }
+section{
+  min-height: 50vh;
+}
+/*
+@media (max-width: 768px) {
+
+
+    p, b, a, button{
+      font-size: 0.8em;
+
+    }
+    h1{
+      font-size: 2.0em;
+
+    }
+    h2{
+      font-size: 1.4em;
+
+    }
+    h3{
+      font-size: 1em;
+
+    }
+    h4{
+    font-size: 1.0em;
+    }
+  }
+*/
