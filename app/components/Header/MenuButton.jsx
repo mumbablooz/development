@@ -5,7 +5,7 @@ setIsOpen(!isOpen)
     }
 
   return (   
-        <li className='button'>
+        <li className='iconButton'>
             {!isOpen ? <img 
         width="24" 
         height="24" 
