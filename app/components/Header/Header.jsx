@@ -4,6 +4,7 @@ import Link from 'next/link'
 import MenuButton from './MenuButton'
 import styles from './styles.module.css'
 import Image from 'next/image'
+import SpendenButton from '../spenden/SpendenButton'
 
 export default function Header() {
 
@@ -11,9 +12,29 @@ export default function Header() {
   const [ content, setContent ] = useState(null)
   const [ opacityTitelLogoNav, setOpacityTitelLogoNav ] = useState(0)
   const [ opacityContent, setOpacityContent ] = useState(0)
-  const contentHtml = (<ul className={styles.menuContainer}>
-    <Link href={'/Kontakt'} className='button'><li style={{marginRight: '1rem'}}>Kontakt</li></Link>
-    </ul>)
+  const contentHtml = (<div className={styles.menuContainer}>
+
+    <img 
+        width="12" 
+        height="12" 
+        src="https://img.icons8.com/material/24/var(--firstColor)/cancel--v1.png" 
+        alt="cancel--v1"
+        onClick={()=>setIsOpen(!isOpen)}
+        style={{cursor: 'pointer',
+        alignSelf: 'flex-end'}}/>
+
+    <ul>
+    <Link href={'/Kontakt'}>
+      <li className={styles.liCss+' button'} 
+    style={{
+    marginRight: '1rem',
+    backgroundColor: 'transparent',
+    color: 'var(--firstColor)',
+    }}>Kontakt</li>
+    </Link>
+    </ul>
+    
+    </div>)
     
 useEffect(()=>{
 setTimeout(()=>{
@@ -41,8 +62,8 @@ style={{opacity: opacityTitelLogoNav}}>
     </div>   
 
         <nav>
-        <ul>
-<li> 
+        <div>
+
 
 
 <Image 
@@ -55,16 +76,16 @@ style={{
   height: 'auto',
   borderRadius: '50%'
 }}/>
-</li>
 
-<Link href={'/'}>
-  <li className='button' style={{marginRight: '1rem'}}><img 
+  <SpendenButton />
+
+<Link href={'/'} className='button' style={{marginRight: '1rem'}}><img 
   width="24" 
   height="24" 
   src="https://img.icons8.com/glyph-neue/64/var(--firstColor)/home--v2.png" 
-  alt="home--v5"/></li></Link>
+  alt="home--v5"/></Link>
         <MenuButton isOpen={isOpen} setIsOpen={setIsOpen}/>
-        </ul>  
+        </div>  
         </nav>
 </div>
 

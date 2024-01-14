@@ -19,8 +19,9 @@
   .headerContainer nav {
     display: flex;
     width: 100%;
+    padding: 0.2em;
   }
-  .headerContainer nav ul {
+  .headerContainer nav div {
     display: flex;
     justify-content: space-between;
     background-color: transparent;
@@ -31,8 +32,11 @@
     flex-direction: column;
     background-color: var(--fourthColor);
     transition: 0.5s ease-in-out; 
+    border-bottom: 0.1em solid var(--firstColor);;
   }
-
+.menuContainer ul{
+  background-color: var(--fourthColor);
+}
   .titelContainer{
 display: flex;
 align-items: center;
@@ -41,4 +45,7 @@ flex-grow: unset;
   .titelContainer h1{
     margin-right: 0.5em;
     font-size: 0.8em;
+  }
+.liCss{
+color: var(--firstColor);
   }
