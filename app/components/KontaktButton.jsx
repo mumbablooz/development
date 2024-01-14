@@ -9,9 +9,10 @@ export default function KontaktButton() {
         marginRight: '0.5em'
       }}>Kontakt</p>
         <img 
+        className='icon'
         width="30" 
         height="30" 
-        src="https://img.icons8.com/ios-glyphs/30/FFFFFF/mail-contact.png" 
+        src="https://img.icons8.com/ios-glyphs/30/var(--firstColor)/mail-contact.png" 
         alt="mail-contact"/>
     </Link>
   )
