@@ -7,6 +7,7 @@
   --secoundColor: rgb(69, 61, 152);
   --thirdColor: #000;
   --fourthColor: aliceblue;
+  --fifthColor: rgb(130, 126, 176);
 }
 
 body {
@@ -67,7 +68,8 @@ figure {
 }
 button, 
 .button,
-.greenButton{
+.greenButton,
+.iconButton{
   padding: 0.3rem;
   border-radius: 10rem;
   transition: 0.1s ease-in-out;  
@@ -77,7 +79,8 @@ button,
 }
   button:hover,
   .button:hover,
-  .greenButton:hover{
+  .greenButton:hover,
+  .iconButton:hover{
     border-radius: 50rem;
     transition: 0.5s ease-in-out;
   }
@@ -88,12 +91,17 @@ button,
     color: var(--firstColor);
   }
   button:hover,
-  .button:hover{
-    opacity: 0.7;
-    color: var(--firstColor);
-
+  .button:hover,
+  .icon,
+  .iconButton:hover
+{
+  background-color: var(--fifthColor);
+    color: var(--fourthColor);
   }
-
+  .iconButton{
+width: 2em;
+height: 2em;
+  }
   .greenButton{
 background-color: green;
 color: var(--fourthColor);
@@ -101,6 +109,14 @@ color: var(--fourthColor);
   .greenButton:hover{
     background-color: lightgreen;
     color: var(--firstColor);
+  }
+  .menuButton{
+background-color: transparent;
+color: var(--firstColor);
+  }
+  .menuButton:hover{
+    color: var(--secoundColor);
+    background-color: transparent;
   }
 section{
   min-height: 50vh;
