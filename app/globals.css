@@ -99,8 +99,8 @@ button,
     color: var(--fourthColor);
   }
   .iconButton{
-width: 2em;
-height: 2em;
+width: 3rem;
+height: 3rem;
   }
   .greenButton{
 background-color: green;
