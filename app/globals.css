@@ -121,9 +121,8 @@ color: var(--firstColor);
 section{
   min-height: 50vh;
 }
-/*
-@media (max-width: 768px) {
 
+@media (max-width: 768px) {
 
     p, b, a, button{
       font-size: 0.8em;
@@ -145,4 +144,4 @@ section{
     font-size: 1.0em;
     }
   }
-*/
+
