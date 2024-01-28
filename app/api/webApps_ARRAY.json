@@ -1,0 +1,63 @@
+{
+    "webApps_ARRAY": [
+        {
+            "name": "Blooz Musik",
+            "link": "music.blooz.de",
+            "github": "https://github.com/mumbablooz/development",
+            "description": "Meine Musik und meine Musikbildungsaktivitäten",
+            "technologys": ["javascript","html","css","reactjs","nextjs"],
+            "progress": "pre-alpha"
+        },
+        {
+            "name": "Pfiffikus Musik",
+            "link": "pfiffikus.blooz.de",
+            "github": "https://github.com/mumbablooz/pfiffikusmusik",
+            "description": "Musik zum mitsingen",
+            "content": "Instrumentale von mir (Blooz) und anderen zu Liedern",
+            "technologys": ["javascript","html","css","reactjs","nextjs"],
+            "progress": "beta"
+        }, 
+   {
+            "name": "Mathematik üben",
+            "link": "mathe-mu.vercel.app/",
+            "github": "https://github.com/mumbablooz/mathe",
+            "description": "Übungsseite für Mathematik",
+            "content": "Matheaufgaben",
+            "technologys": ["javascript","html","css","reactjs","nextjs"],
+            "progress": "pre-alpha"
+        },        
+                {
+            "name": "Bremerhaven Graffiti",
+            "link": "graffiti.blooz.de",
+            "github": "",
+            "description": "Graffiti Kunst aus Bremerhaven",
+            "technologys": ["javascript","html","css","leaflet"],
+            "progress": "pre-alpha"
+        },
+        {
+            "name": "Chuck Norris",
+            "link": "andreas.blooz.de",
+            "github": "",
+            "description": "Chuck Norris Witze auf Englisch",
+            "technologys": ["javascript","html","css","reactjs","nextjs","joke-api"],
+            "progress": "pre-alpha"
+        },
+{
+            "name": "Faktencheck",
+            "link": "fakten.blooz.de",
+            "github": "https://github.com/mumbablooz/faktencheck",
+            "description": "Methoden zum faktenchecken /Fragen und Antworten",
+            "technologys": ["javascript","html","css","reactjs","nextjs"],
+            "progress": "pre-alpha"
+        },
+        {
+            "name": "Multiple Choice",
+            "link": "multiplechoice-nine.vercel.app/",
+            "github": "https://github.com/mumbablooz/multiplechoice",
+            "description": "Frage und Antwort Spiel zum lernen",
+            "technologys": ["javascript","html","css","reactjs","nextjs"],
+            "progress": "pre-alpha",
+            "image": "https://cdn.pixabay.com/photo/2014/09/12/18/23/selection-443127_1280.png"
+        }
+    ]
+}
