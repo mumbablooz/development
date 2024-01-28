@@ -3,14 +3,11 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import {fetchWebApps} from '../fetchWebApps'
 import styles from './styles.module.css'
+import webApps_ARRAY from '../../api/webApps_ARRAY'
 
 export default function WebApps() {
 
-const [ webApp, setWebApp ] = useState('')
-
-useEffect(()=>{
-  fetchWebApps(setWebApp)
-},[])
+const [ webApp, setWebApp ] = useState(webApps_ARRAY.webApps_ARRAY)
 
   return (
     <div
