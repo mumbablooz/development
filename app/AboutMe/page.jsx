@@ -15,7 +15,7 @@ export default function AboutMe() {
 
 <ul>
     <li>Musik: Ich spiele seit vielen Jahren verschiedene Instrumente und komponiere eigene Musik.</li>
-    <li>Musikpädagogik: Seit 2003 sammel ich Erfahrungen bei der Durchführung von Musikbildungprojekten. Ich habe in meinem Musik Studium viel über die Entwicklung von Kindern und die Bedeutung von Musik gelernt.</li>
+    <li>Musikpädagogik: Seit 2003 sammle ich Erfahrungen bei der Durchführung von Musikbildungprojekten. Ich habe in meinem Musik Studium viel über die Entwicklung von Kindern und die Bedeutung von Musik gelernt.</li>
     <br/>
     <li>Webentwicklung: Seit 2020 bilde ich mich autodidaktisch im Erstellen von Webanwendungen mit Javascript weiter.</li>
 </ul>
