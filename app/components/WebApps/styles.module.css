@@ -1,0 +1,70 @@
+.mainContainer{
+padding: 0.4rem;
+overflow: clip;
+width: 100%;
+}
+.container{
+    display: flex;
+    border: 1px solid white;
+    border-radius: 2em;
+    padding: 0.8rem;
+    margin: 0.6rem;
+    overflow: clip;
+}
+.container div:first-child{
+    padding: 0.4rem;
+    overflow: clip;
+}
+.leftSideContainer{
+    width: 50%;
+    overflow: clip;
+}
+.leftSideContainer .button{
+
+    overflow: clip;
+}
+.infoContentContainer{
+    display: flex;
+flex-direction: column;
+    overflow: clip;
+}
+
+.infoContentContainer div p {
+    padding: 0 0.6rem;
+}
+.partCss{
+    margin: 0.6rem;
+}
+/*
+.leftSideContainer h3{
+    margin-right: 1rem;
+}
+@media (max-width: 768px) {
+
+    .mainContainer{
+        padding: 0.2rem;
+        }
+        .container{
+            border-radius: 1rem;
+            padding: 0.2rem;
+            margin: 0.3rem;
+        }
+        .container div:first-child{
+            padding: 0.4rem;
+        }
+ 
+        .leftSideContainer .button{
+            width: 5rem;
+        }
+
+        .infoContentContainer p {
+            padding: 0 0.3rem;
+        }
+        .partCss{
+            margin: 0.3em;
+        }
+        .leftSideContainer h3{
+            margin-right: 0.5rem;
+        }
+}    
+*/
