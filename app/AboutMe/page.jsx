@@ -40,6 +40,8 @@ export default function AboutMe() {
     <li>Expertise in Musik und Musikpädagogik</li>
     <li>Kreativität und innovative Ideen</li>
     <li>Engagement und Leidenschaft für die Musikbildung</li>
+    <li>Javascript, Html und Css Kentnisse</li>
+    <li>Technologien: Reactjs und Nextjs</li>
 </ul>
 
 <h2>Kontakt</h2>
